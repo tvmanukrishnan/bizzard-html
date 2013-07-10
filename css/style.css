@@ -1,0 +1,503 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size:14px;
+	line-height:20px;
+}
+
+.container-fluid {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+
+#fixed-sidebar { 
+    float: left;
+    width: 250px;
+    min-width: 250px;    
+    background: url('../img/grain.png')repeat scroll 0 0px, none repeat scroll 0 0 #688BAA;
+    position: fixed;
+    height: 100%;
+   	text-align: center;	
+	-moz-box-shadow: 2px 0px 4px #688BAA;
+	-webkit-box-shadow: 2px 0px 4px #688BAA;
+	box-shadow: 2px 0px 4px #688BAA;
+}
+
+.gravatar {
+	margin-top: 10px;
+	padding: 3px;
+	border: 1px solid #eee;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+
+#fixed-sidebar h5{
+	color: #fff;
+	font-family: 'Aldrich', sans-serif;
+}
+
+#fixed-sidebar h6{
+	color: #FCFFCD;
+}
+
+#fixed-sidebar ul {
+	list-style: none; 
+	display: block;
+}
+
+#fixed-sidebar ul li {
+	color: #fff;
+	padding: 3px 0;
+	font-weight: normal;
+}
+
+#remaining-space {
+	float: right;
+	background: #fffefe;
+	height: 100%;
+	width: 80%;
+}
+
+#content {
+	float: left;
+	width: 73%;
+	padding-left: 30px;
+}
+
+#content .title {
+	margin: 20px 0 20px 0;
+	font-family: 'Sintony', sans-serif;
+	font-size: 22px;
+	color: #688BAA;
+	text-align: center;
+}
+
+#content .title .big {
+	font-family: 'Aldrich', sans-serif;
+	font-size: 26px;
+	line-height: 32px;
+}
+
+#content .subtitle {
+	text-align: center;
+	font-size: 18px;
+	font-family: 'Offside', serif;
+	font-weight: normal;
+	line-height: 1.6;
+}
+
+#content .left-content, #content .right-content {
+	margin: 15px 0 0 0;
+	width: 44%;
+	float: left;
+	border: 1px solid #688BAA;
+	padding: 10px;
+}
+
+#content .right-content {
+	float: right;
+}
+
+#content .left-content ul, #content .right-content ul {
+	list-style: none;
+	padding: 10px;
+}
+
+#right-sidebar {
+	float: right;
+	right: 0;
+	width: 225px;
+	text-align: center;
+	margin: 5px;
+}
+
+#right-sidebar h6 {
+	padding: 12px 0 5px 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/* Typography */
+
+p {
+	text-align: justify;
+	padding: 5px 0 10px 0;
+}
+
+h1 {
+	font-size: 200%;
+}
+
+h2 {
+	font-size: 180%;
+}
+
+h3 {
+	font-size: 160%;
+}
+
+h4 {
+	font-size: 140%;
+}
+
+h5 {
+	font-size: 120%;
+}
+
+h6 {
+	font-size: 100%;
+}
+
+a, a:active, a:hover {
+	color:  #688BAA;
+	text-decoration: none;
+}
+
+.center {
+	text-align: center;
+}
+
+/* Single Article Styling */
+
+.article {
+	padding-bottom: 15px;
+}
+
+.article .title {
+	border-top: 1px solid #688BAA;
+	overflow: auto;
+	height: auto;
+}
+
+.article .posted-on {
+	min-height: 80px;
+	height: auto;
+	background: url('../img/grain.png')repeat scroll 0 0px, none repeat scroll 0 0 #688BAA;
+	width: 80px;
+	display: inline-block;
+	float: left;
+	text-align: center;
+	margin: 0 15px 0 0;
+	padding: 15px 0 0 0;
+	color: #fff;
+	-moz-box-shadow: 1px 2px 2px #688BAA;
+	-webkit-box-shadow: 1px 2px 2px #688BAA;
+	box-shadow: 1px 2px 2px #688BAA;
+}
+
+.article .posted-on big {
+	font-size: 220%;
+}
+
+.article h1 {
+	margin: 10px 0 25px 10px;
+	font-family: 'Sintony', sans-serif;
+	position: relative;
+	font-size: 225%;
+	line-height: 1.5;
+}
+
+.article .featured {
+	display: inline;
+	float: left;
+	margin: 8px 8px 0 0;
+	border: 1px solid #eee;
+	padding: 3px;
+}
+
+.article .read-more {
+	float: right;
+	font-size: 90%;
+	font-weight: bold;
+}
+
+
+/* Social Media Icons */
+
+.socmed {
+	width: 240px;
+    text-align: center;
+    overflow: hidden;
+    z-index: 100;
+    height: 40px;
+	margin: 0 auto;
+	padding: 10px 0 0 8px;
+    float: none;
+}
+
+.socmed-share {
+	width: 210px;
+    text-align: center;
+    overflow: hidden;
+    z-index: 100;
+	margin: 0 auto;
+	padding: 0 0 0 8px;
+    float: none;
+}
+
+.twitter a,.facebook a,.tumblr a,.dribbble a,.linkedin a,.rss a,.delicious a,.google a,.digg a,.digg2 a,.flickr a,.lastfm a,.myspace a,.picasa a,.googleplus a,.skype a,.diaspora a,.vimeo a,.youtube a,.yahoo a,.yahoo2 a,.wikipedia a {
+	float: left;
+    background:url('../img/socmed.png') no-repeat left bottom;
+    text-indent:8000px;
+    width:32px;
+    height:32px;
+    margin-right:8px;
+    -o-transition:all .3s;
+    -moz-transition:all .3s;
+    -webkit-transition:all .3s;
+    -ms-transition:all .3s;
+}
+.twitter a:hover,.facebook a:hover,.tumblr a:hover,.dribbble a:hover,.linkedin a:hover,.rss a:hover,.delicious a:hover,.google a:hover,.digg a:hover,.digg2 a:hover,.flickr a:hover,.lastfm a:hover,.myspace a:hover,.picasa a:hover,.googleplus a:hover,.skype a:hover,.diaspora a:hover,.vimeo a:hover,.youtube a:hover,.yahoo a:hover,.yahoo2 a:hover,.wikipedia a:hover {
+    background:url('../img/socmed.png') no-repeat left top;
+}
+
+.twitter,.twitter a{background-position:-0px bottom}
+.twitter a:hover{background-position:-0px top}
+.diaspora,.diaspora a{background-position:-528px bottom}
+.diaspora a:hover{background-position:-528px top}
+.facebook,.facebook a{background-position:-33px bottom}
+.facebook a:hover{background-position:-33px top}
+.tumblr,.tumblr a{background-position:-66px bottom}
+.tumblr a:hover{background-position:-66px top}
+.dribbble,.dribbble a{background-position:-99px bottom}
+.dribbble a:hover{background-position:-99px top}
+.linkedin,.linkedin a{background-position:-133px bottom}
+.linkedin a:hover{background-position:-133px top}
+.rss,.rss a{background-position:-166px bottom}
+.rss a:hover{background-position:-166px top}
+.delicious,.delicious a{background-position:-199px bottom}
+.delicious a:hover{background-position:-199px top}
+.google,.google a{background-position:-233px bottom}
+.google a:hover{background-position:-233px top}
+.digg,.digg a{background-position:-266px bottom}
+.digg a:hover{background-position:-266px top}
+.digg2,.digg2 a{background-position:-299px bottom}
+.digg2 a:hover{background-position:-299px top}
+.flickr,.flickr a{background-position:-331px bottom}
+.flickr a:hover{background-position:-331px top}
+.lastfm,.lastfm a{background-position:-364px bottom}
+.lastfm a:hover{background-position:-364px top}
+.myspace,.myspace a{background-position:-397px bottom}
+.myspace a:hover{background-position:-397px top}
+.picasa,.picasa a{background-position:-431px bottom}
+.picasa a:hover{background-position:-431px top}
+.googleplus,.googleplus a{background-position:-464px bottom}
+.googleplus a:hover{background-position:-464px top}
+.skype,.skype a{background-position:-497px bottom}
+.skype a:hover{background-position:-497px top}
+.vimeo,.vimeo a{background-position:-562px bottom}
+.vimeo a:hover{background-position:-562px top}
+.youtube,.youtube a{background-position:-594px bottom}
+.youtube a:hover{background-position:-594px top}
+.yahoo,.yahoo a{background-position:-628px bottom}
+.yahoo a:hover{background-position:-628px top}
+.yahoo2,.yahoo2 a{background-position:-662px bottom}
+.yahoo2 a:hover{background-position:-662px top}
+.wikipedia,.wikipedia a{background-position:-694px bottom}
+.wikipedia a:hover{background-position:-694px top}
+
+
+/* search form  */
+.searchform {
+	display: inline-block;
+	zoom: 1; /* ie7 hack for display:inline-block */
+	*display: inline;
+	border: solid 1px #d2d2d2;
+	padding: 3px 4px;
+	margin: 8px 0;
+	
+	-webkit-border-radius: 2em;
+	-moz-border-radius: 2em;
+	border-radius: 2em;
+
+	-webkit-box-shadow: 0 1px 0px rgba(0,0,0,.1);
+	-moz-box-shadow: 0 1px 0px rgba(0,0,0,.1);
+	box-shadow: 0 1px 0px rgba(0,0,0,.1);
+
+	background: #f1f1f1;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ededed));
+	background: -moz-linear-gradient(top,  #fff,  #ededed);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed'); /* ie7 */
+	-ms-filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed'); /* ie8 */
+}
+.searchform input {
+	font: normal 12px/100% Arial, Helvetica, sans-serif;
+}
+.searchform .searchfield {
+	background: #fff;
+	padding: 6px 6px 6px 8px;
+	width: 140px;
+	border: solid 1px #bcbbbb;
+	outline: none;
+
+	-webkit-border-radius: 2em;
+	-moz-border-radius: 2em;
+	border-radius: 2em;
+
+	-moz-box-shadow: inset 0 1px 2px rgba(0,0,0,.2);
+	-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: inset 0 1px 2px rgba(0,0,0,.2);
+}
+.searchform .searchbutton {
+	color: #fff;
+	border: solid 1px #494949;
+	font-size: 11px;
+	height: 27px;
+	width: 27px;
+	text-shadow: 0 1px 1px rgba(0,0,0,.6);
+
+	-webkit-border-radius: 2em;
+	-moz-border-radius: 2em;
+	border-radius: 2em;
+
+	background: #5f5f5f;
+	background: -webkit-gradient(linear, left top, left bottom, from(#9e9e9e), to(#454545));
+	background: -moz-linear-gradient(top,  #9e9e9e,  #454545);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#9e9e9e', endColorstr='#454545'); /* ie7 */
+	-ms-filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#9e9e9e', endColorstr='#454545'); /* ie8 */
+}
+
+/* Responsive Sizes */
+
+@media(min-width:980px) and (max-width:1199px){
+#fixed-sidebar { 
+
+}
+
+#remaining-space {
+	width: 76%;
+}
+
+#content {
+	width: 65%;
+}
+
+#right-sidebar {
+	width: 220px;
+}
+}
+
+@media(min-width:768px) and (max-width:979px){
+#fixed-sidebar { 
+	width: 30%;
+}
+
+#remaining-space {
+	width: 68%;
+}
+
+#content {
+	padding: 0 2% 0 3%;
+	width: auto;
+}
+
+#right-sidebar {
+	float: none;
+	clear: both;
+	width: auto;
+	text-align: left;
+}
+
+.socmed-share {
+	text-align: left;
+	width: auto;
+}
+}
+
+@media(max-width:767px){
+#fixed-sidebar { 
+	float: none;
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+
+#fixed-sidebar ul li {
+	display: inline-block;
+	position: relative;
+	padding: 5px 10px;
+}
+
+#remaining-space {
+	width: 100%;
+}
+
+#content {
+	width: auto;
+	padding: 0 20px;
+	float: none;
+}
+
+#right-sidebar {
+	clear: both;
+	float: none;
+	width: auto;
+	text-align: left;
+}
+
+.home-sidebar {
+	display: none;
+}
+
+.socmed-share {
+	text-align: left;
+	width: auto;
+}
+}
+
+@media(max-width:480px){
+#fixed-sidebar { 
+	float: none;
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+
+#remaining-space {
+	width: 100%;
+}
+
+#content {
+	width: auto;
+	padding: 0 20px;
+	float: none;
+}
+
+#content .left-content, #content .right-content {
+	width: 98%;
+	float: none;
+	clear: both;
+	margin: 2px 0;
+}
+
+.article .featured {
+	display: block;
+	margin: 8px 8px 0 0;
+	border: 1px solid #eee;
+	padding: 3px;
+	clear: both;
+}
+
+#right-sidebar {
+	clear: both;
+	float: none;
+	width: auto;
+	text-align: left;
+}
+
+.home-sidebar {
+	display: none;
+}
+
+.socmed-share {
+	text-align: left;
+	width: auto;
+}
+}
